@@ -1,0 +1,17 @@
+`define opcode_none 6'b000000
+`define opcode_add 6'b000001
+`define opcode_sub 6'b000011
+`define opcode_and 6'b000101
+`define opcode_or 6'b000110
+`define opcode_nor 6'b000111
+`define opcode_xor 6'b001000
+`define opcode_sla 6'b001001
+`define opcode_sll 6'b001010
+`define opcode_sra 6'b001011
+`define opcode_srl 6'b001100
+`define opcode_addi 6'b100000
+`define opcode_load 6'b100100
+`define opcode_store 6'b100101
+`define opcode_bez 6'b101000
+`define opcode_bne 6'b101001
+`define opcode_j 6'b101010
