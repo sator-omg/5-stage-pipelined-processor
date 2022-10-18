@@ -1,9 +1,17 @@
 `include "defines.v"
 
-module mux #(parameter integer LENGTH) (in1, in2, sel, out);
-  input sel;
-  input [LENGTH-1:0] in1, in2;
+module mux #(parameter integer LENGTH) (input1, input2, selector, out);
+  input selector;
+  input [LENGTH-1:0] input1, input2;
   output [LENGTH-1:0] out;
 
-  assign out = (sel == 0) ? in1 : in2;
+always@(*) begin
+  if (selector==1'b1) begin
+   assign out = input2;
+  end 
+  else begin 
+   assign out = input1;
+  end
+end
+
 endmodule

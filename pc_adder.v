@@ -1,6 +1,6 @@
 `include "defines.v"
 
-module pcadder (input1, input2, out);
+module pc_adder (input1, input2, out);
   input [31:0] input1, input2;
   output [31:0] out;
 
